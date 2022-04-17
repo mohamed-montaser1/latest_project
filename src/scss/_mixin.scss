@@ -1,0 +1,34 @@
+@import "./variables";
+@mixin linear {
+  background-image: linear-gradient(
+    to right top,
+    $main_color,
+    70%,
+    $secondary_color
+  );
+}
+
+@mixin footerBackgroundColorLinear {
+  background-image: linear-gradient(
+    to right top,
+    $secondary_color
+  );
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

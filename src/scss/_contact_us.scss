@@ -1,0 +1,47 @@
+@import "./variables";
+
+.contact-us-body {
+  background-color: #dd9400;
+}
+
+.working-time {
+  .container-fluid {
+    .row {
+      .col-sm-12 {
+        &:first-child {
+          h2 {
+            color: white;
+            text-align: center;
+            margin: 1rem 0 4rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-control {
+  margin: 14px;
+}
+
+.invalid-feedback {
+  margin: 10px;
+}
+
+.clearfix {
+  button {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: $secondary_color;
+    color: white;
+    &:hover {
+      color: darken(white, 25%);
+    }
+  }
+}
+
+#contact_footer {
+  position: relative;
+  top: 43px;
+}

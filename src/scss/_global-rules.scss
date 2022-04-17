@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap");
+@import "./variables";
+
+body {
+  font-family: "Cairo", sans-serif !important;
+  overflow-x: hidden;
+  background-color: $white;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  box-shadow: none !important;
+  caret-color: $secondary_color;
+}
+
+section {
+  margin: 2rem 0 !important;
+}
+
+// footer
+
+footer {
+  background-color: #555;
+  width: 100%;
+  height: 395px;
+  text-align: center;
+  position: relative;
+  direction: rtl !important;
+  .container-fluid {
+    .row {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .social-media {
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        & > i {
+          color: white;
+          margin: 0 9px;
+          font-size: 29px;
+          cursor: pointer;
+          transition: 0.4s linear;
+          &:first-child {
+            &:hover {
+              color: $face_book;
+            }
+          }
+          &:nth-child(2) {
+            &:hover {
+              color: $git_hub;
+            }
+          }
+          &:last-child {
+            &:hover {
+              color: $whats_app;
+            }
+          }
+        }
+      }
+      .copy-right {
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+        color: white;
+      }
+      .form-column {
+        position: absolute;
+        bottom: 127px;
+        form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row-reverse;
+          width: 85%;
+          margin: 0 auto;
+          input {
+            direction: ltr;
+            width: 57%;
+          }
+          .invalid-feedback {
+            position: absolute;
+            bottom: -41px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px white;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: whitesmoke;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 245, 245, 0.772);
+}
+
+::selection {
+  background-color: #dfdfde;
+  color: $secondary_color;
+}

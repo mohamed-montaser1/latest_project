@@ -1,0 +1,20 @@
+@import "./variables";
+@media (max-width: 454px) {
+  .landing {
+    width: calc(100% + 95px) !important;
+  }
+}
+
+@media (max-width: 780px) {
+  .carousel {
+    width: 90%;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 991px) {
+  .products .card {
+    margin: 24px auto;
+    height: 550px !important; 
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distributors Page</title>
+    <link
+      rel="icon"
+      sizes="32×32"
+      href="./images/logo.svg"
+      type="image/svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="layer"></div>
+    <div class="nav fixed-top nav-distributors">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">
+          <a href="./index.html">
+            <img class="logo-img" src="./images/logo.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./distributors.html">Distributors Page</a>
+        <a href="./about.html">About Company</a>
+        <a href=".">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="col-sm-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95970.36041454392!2d31.328505069627393!3d30.0596184702164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2z2KfZhNmC2KfZh9ix2KnYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKw!5e1!3m2!1sar!2seg!4v1649614736311!5m2!1sar!2seg"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-100 vh-100 map"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <section class="distributors-section">
+      <div class="slide carousel" id="customCarousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#customCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#customCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#customCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-item1 active">
+            <div class="img-container">
+              <img src="./images/products/customer/man.jpg" alt="" />
+            </div>
+            <div class="text-container">
+              <h2 class="text-capitalize">aser hatem</h2>
+              <p class="text-capitalize">this is my demo address</p>
+              <p class="text-capitalize">+201002930029</p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item2">
+            <div class="img-container">
+              <img src="./images/products/customer/woman2.jpg" alt="" />
+            </div>
+            <div class="text-container">
+              <h2 class="text-capitalize">yasmen khaled</h2>
+              <p class="text-capitalize">this is my demo address</p>
+              <p class="text-capitalize">+2011202923229</p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item3">
+            <div class="img-container">
+              <img src="./images/products/customer/woman.jpg" alt="" />
+            </div>
+            <div class="text-container">
+              <h2 class="text-capitalize">esraa esmat</h2>
+              <p class="text-capitalize">this is my demo address</p>
+              <p class="text-capitalize">+201232930242</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#customCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#customCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <div class="logo">
+              <img src="./images/logo.svg" width="100" height="100" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-12 text-center">
+            <div class="social-media">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+          </div>
+
+          <div class="col-sm-12 form-column text-center">
+            <form class="needs-validation" novalidate>
+              <input
+                type="email"
+                placeholder="email"
+                class="form-control"
+                required
+              />
+              <div class="invalid-feedback">please enter an valid email</div>
+              <button type="submit" class="btn">submit</button>
+            </form>
+          </div>
+
+          <div class="col-sm-12 text-center">
+            <div class="copy-right">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
