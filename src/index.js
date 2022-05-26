@@ -10,7 +10,7 @@ import "jquery/dist/jquery.slim.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "popper.js/dist/popper.min";
-$(() => {
+$(function () {
   let copyRightP = document.querySelector(".copy-right p");
 
   let date = new Date();
@@ -20,21 +20,22 @@ $(() => {
   let cartBtn = $(".cart");
   cartBtn.on("click", (e) => {
     Swal.fire(
-      "Good job!",
+      "Success! this product add to card",
       "Done!, you add this Coffee to your Cart",
       "success"
     );
   });
-  // let subscribeInput = $(".form-control");
-  // subscribeInput.on("focus", (e) => {
-  //   let placeholder = subscribeInput.attr("placeholder", "");
-  // });
-  // subscribeInput.on("blur", (e) => {
-  //   let placeholder = subscribeInput.attr(
-  //     "placeholder",
-  //     "subscribe in newspaper"
-  //   );
-  // });
+
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.querySelector(".navbar").style.top = "0";
+    } else {
+      document.querySelector(".navbar").style.top = "-70px";
+    }
+    prevScrollpos = currentScrollPos;
+  };
 });
 
 (function () {

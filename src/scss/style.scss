@@ -8,105 +8,51 @@
 @import "./distributors";
 @import "./about";
 @import "./contact_us";
-.nav {
-  height: 62px;
-  width: 100%;
-  background-color: $secondary_color_product2 !important;
-  position: relative;
+
+.navbar {
   direction: ltr;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 20px;
-  z-index: 100;
-  & > .nav-header {
-    display: inline;
-    & > .nav-title {
-      .nav-title {
-        display: inline-block;
-        font-size: 22px;
-        color: #fff;
-        padding: 10px 10px 10px 10px;
-      }
-      .logo-img {
-        width: 62px;
-        height: auto;
-      }
+  height: 70px;
+  z-index: 10000;
+  transition: all 0.3s ease-in-out;
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    img {
+      width: 81px;
+      height: 66px;
     }
   }
-  .nav-btn {
-    display: none;
-  }
-  .nav-links {
-    display: inline;
-    float: right;
-    font-size: 18px;
-    transform: translateY(-7px);
-    a {
-      display: inline-block;
-      padding: 13px 10px 13px 10px;
-      text-decoration: none;
-      color: #efefef;
-      text-align: center;
-      transition: all 0.3s linear;
-      &:hover {
-        background-color: $black;
-      }
-    }
-  }
-  #nav-check {
-    display: none;
-  }
-}
+  .navbar-nav {
+    margin-left: auto !important;
+    li {
+      border-radius: 2px;
+      border: 1px solid white;
 
-@media (max-width: 600px) {
-  .nav {
-    & > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
-    & > .nav-btn {
-      & > label {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        padding: 13px;
+      a {
+        color: black;
       }
-    }
-    & > .nav-btn > label:hover,
-    & #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-    & > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
-    }
-    & > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
-      transform: translateY(7px);
-    }
-    & > .nav-links > a {
-      display: block;
-      width: 100%;
-    }
-    & > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    & > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
+
+      &.active {
+        background-color: $main_color;
+        border: 1px solid $main_color;
+        border-radius: 2px;
+        transition: all 0.4s ease-in-out;
+        a {
+          transition: all 0.4s ease-in-out;
+          color: white;
+        }
+        &:hover {
+          background-color: white;
+          a {
+            color: black;
+          }
+        }
+      }
     }
   }
 }
